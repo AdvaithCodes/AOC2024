@@ -21,9 +21,7 @@ val = 0
 
 for n in list_1:
     counter = 0
-    for m in list_2:
-        if n == m:
-            counter += 1
+    counter = list_2.count(n)
     val = val + (n * counter)
 
 print(val)
